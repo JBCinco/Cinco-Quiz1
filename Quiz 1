@@ -1,0 +1,57 @@
+const int redLED = 2;
+const int greenLED = 3;
+const int blueLED = 4;
+
+int redButton = 5;    //  pin for red
+int greenButton = 6;  //  pin for green
+int blueButton = 7; //  pin for blue
+
+
+void setup() {
+  // put your setup code here, to run once:
+
+pinMode(buttonPin, INPUT_PULLUP);
+pinMode(7, OUTPUT);  //sets pin
+pinMode(6, OUTPUT);  //sets pin
+pinMode(5, OUTPUT);  //sets pin
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+
+redLED = digitalRead(redLED);
+blueLED = digitalRead(blueLED);
+greenLED = digitalRead(greemLED);
+
+
+    digitalWrite(7, LOW);  //turns off LED
+    digitalWrite(6, LOW);  //turns off LED
+    digitalWrite(5, LOW);  //turns off LED
+
+    If (redLED == HIGH) {
+      digitalWrite(5, HIGH);
+      digitalWrite(6, LOW);
+      digitalWrite(7, LOW);
+}
+
+
+/*void buttonPressed() {
+
+redLED = digitalRead(redLED);
+blueLED = digitalRead(blueLED);
+greenLED = digitalRead(greemLED);
+
+
+    digitalWrite(7, LOW);  //turns off LED
+    digitalWrite(6, LOW);  //turns off LED
+    digitalWrite(5, LOW);  //turns off LED
+
+    If (redLED == HIGH) {
+      digitalWrite(5, HIGH);
+      digitalWrite(6, LOW);
+      digitalWrite(7, LOW);
+    }
+    
+}
+*/
